@@ -1,4 +1,4 @@
-// import PropTypes from 'prop-type';
+import PropTypes from 'prop-type';
 import { Title, SectionStat, StatList, Item } from './Statistics.styled';
 export function Statistics({ title = 'Upload stats', stats }) {
   function randomHexColor() {
@@ -23,12 +23,12 @@ export function Statistics({ title = 'Upload stats', stats }) {
   );
 }
 
-// Statistics.prototype = {
-//   title: PropTypes.string,
-//   stats: PropTypes.arrayOf(
-//     PropTypes.shape({
-//       label: PropTypes.string.isRequired,
-//       percentage: PropTypes.number.isRequired,
-//     })
-//   ).isRequired,
-// };
+Statistics.prototype = {
+  title: PropTypes.string,
+  stats: PropTypes.arrayOf(
+    PropTypes.shape({
+      label: PropTypes.string.isRequired,
+      percentage: PropTypes.number.isRequired,
+    })
+  ).isRequired,
+};

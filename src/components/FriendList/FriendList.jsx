@@ -1,4 +1,4 @@
-// import PropTypes from 'prop-types';
+import PropTypes from 'prop-types';
 import { FriendListUl } from './FriendList.styled';
 import { FriendListItem } from '../FriendListItem/FriendListItem';
 export function FriendList({ friends }) {
@@ -16,8 +16,8 @@ export function FriendList({ friends }) {
   );
 }
 
-// FriendList.prototype = {
-//   avatar: PropTypes.string,
-//   name: PropTypes.string.isRequired,
-//   isOnline: PropTypes.bool.isRequired,
-// };
+FriendList.prototype = {
+  avatar: PropTypes.string,
+  name: PropTypes.string.isRequired,
+  isOnline: PropTypes.bool.isRequired,
+};

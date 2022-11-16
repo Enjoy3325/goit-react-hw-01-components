@@ -1,4 +1,4 @@
-// import PropTypes from 'prop-types';
+import PropTypes from 'prop-types';
 import {
   ProfileDiv,
   Description,
@@ -44,14 +44,14 @@ export function Profile({
   );
 }
 
-// Profile.PropTypes = {
-//   username: PropTypes.string.isRequared,
-//   tag: PropTypes.string.isRequared,
-//   location: PropTypes.string.isRequared,
-//   avatar: PropTypes.string.isRequared,
-//   stats: PropTypes.shape({
-//     followers: PropTypes.number.isRequared,
-//     views: PropTypes.number.isRequared,
-//     likes: PropTypes.number.isRequared,
-//   }),
-// };
+Profile.PropTypes = {
+  username: PropTypes.string.isRequared,
+  tag: PropTypes.string.isRequared,
+  location: PropTypes.string.isRequared,
+  avatar: PropTypes.string.isRequared,
+  stats: PropTypes.shape({
+    followers: PropTypes.number.isRequared,
+    views: PropTypes.number.isRequared,
+    likes: PropTypes.number.isRequared,
+  }),
+};

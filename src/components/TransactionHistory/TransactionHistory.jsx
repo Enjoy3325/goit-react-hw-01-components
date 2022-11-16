@@ -1,4 +1,4 @@
-// import PropTypes from 'prop-types';
+import PropTypes from 'prop-types';
 import {
   TransactionHistoryTable,
   Thead,
@@ -30,8 +30,8 @@ export const TransactionHistory = ({ items }) => {
   );
 };
 
-// TransactionHistory.prototype = {
-//   type: PropTypes.string,
-//   amount: PropTypes.number,
-//   currency: PropTypes.string,
-// };
+TransactionHistory.prototype = {
+  type: PropTypes.string,
+  amount: PropTypes.number,
+  currency: PropTypes.string,
+};
