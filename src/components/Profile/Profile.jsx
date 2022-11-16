@@ -1,5 +1,15 @@
 // import PropTypes from 'prop-types';
-
+import {
+  ProfileDiv,
+  Description,
+  NameUser,
+  TextDescription,
+  Stats,
+  ItemStats,
+  SpanLabel,
+  QuantitySpan,
+  PhotoAvatar,
+} from './Profile.styled';
 export function Profile({
   username,
   tag,
@@ -8,29 +18,29 @@ export function Profile({
   stats: { followers, views, likes },
 }) {
   return (
-    <div className="profile">
-      <div className="description">
-        <img src={avatar} alt={username} className="avatar" />
-        <p className="name">{username}</p>
-        <p className="tag">@{tag}</p>
-        <p className="location">{location}</p>
-      </div>
+    <ProfileDiv>
+      <Description>
+        <PhotoAvatar src={avatar} alt={username} />
+        <NameUser>{username}</NameUser>
+        <TextDescription>@{tag}</TextDescription>
+        <TextDescription>{location}</TextDescription>
 
-      <ul className="stats">
-        <li>
-          <span className="label">Followers</span>
-          <span className="quantity">{followers}</span>
-        </li>
-        <li>
-          <span className="label">Views</span>
-          <span className="quantity">{views}</span>
-        </li>
-        <li>
-          <span className="label">Likes</span>
-          <span className="quantity">{likes}</span>
-        </li>
-      </ul>
-    </div>
+        <Stats>
+          <ItemStats>
+            <SpanLabel>Followers</SpanLabel>
+            <QuantitySpan>{followers}</QuantitySpan>
+          </ItemStats>
+          <ItemStats>
+            <SpanLabel>Views</SpanLabel>
+            <QuantitySpan>{views}</QuantitySpan>
+          </ItemStats>
+          <ItemStats>
+            <SpanLabel>Likes</SpanLabel>
+            <QuantitySpan>{likes}</QuantitySpan>
+          </ItemStats>
+        </Stats>
+      </Description>
+    </ProfileDiv>
   );
 }
 
