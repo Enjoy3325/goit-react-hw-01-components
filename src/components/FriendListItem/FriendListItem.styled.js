@@ -8,3 +8,9 @@ export const Status = styled.span`
   margin-right: 10px;
   background-color: ${props => (props.statusType ? 'green' : 'red')};
 `;
+export const Name = styled.p`
+  font-size: 18px;
+  line-height: 1.62;
+  font-weight: 18px;
+  margin-left: 20px;
+`;

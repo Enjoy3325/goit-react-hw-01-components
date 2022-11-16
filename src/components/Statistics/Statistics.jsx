@@ -1,4 +1,4 @@
-import PropTypes from 'prop-type';
+import PropTypes from 'prop-types';
 import { Title, SectionStat, StatList, Item } from './Statistics.styled';
 export function Statistics({ title = 'Upload stats', stats }) {
   function randomHexColor() {
@@ -23,7 +23,7 @@ export function Statistics({ title = 'Upload stats', stats }) {
   );
 }
 
-Statistics.prototype = {
+Statistics.propTypes = {
   title: PropTypes.string,
   stats: PropTypes.arrayOf(
     PropTypes.shape({

@@ -56,7 +56,7 @@ export const ItemStats = styled.li`
   flex-direction: column;
   align-items: center;
 
-  :nth-last-child(1n) {
+  :nth-last-of-type(1n) {
     border-right: 1px solid #0f0f4f;
   }
   padding: 5px;
@@ -70,6 +70,7 @@ export const SpanLabel = styled.span`
 
   color: #484137;
 `;
+
 export const QuantitySpan = styled.span`
   color: #0f0f4f;
   text-align: center;
