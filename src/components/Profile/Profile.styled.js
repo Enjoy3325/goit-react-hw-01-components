@@ -55,7 +55,10 @@ export const ItemStats = styled.li`
   display: flex;
   flex-direction: column;
   align-items: center;
-  border-right: 1px solid #0f0f4f;
+
+  :nth-last-child(1n) {
+    border-right: 1px solid #0f0f4f;
+  }
   padding: 5px;
 `;
 export const SpanLabel = styled.span`
